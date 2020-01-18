@@ -1,0 +1,45 @@
+<html>
+  
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.js"></script>
+  <style>
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  </style>
+</head>
+
+<body>
+  <script>
+  var w = window.innerWidth;
+  var h = window.innerHeight;
+  //section 3
+  var x;
+  var y;
+  var speed = 5;
+function setup() {
+  createCanvas(w, h);
+  //section 3
+  x = w/2;
+  y = h/2;
+}
+function draw() {
+  //var x = random(0,w);
+  //var y = random(0,h);
+  //section 1
+  //var color = random(['green','blue','red','orange','black','purple','yellow','gold']);
+  //fill(color);
+  //section 2
+  //var r = random(0,256);
+  //var g = random(0,256);
+  //var b = random(0,256);
+  //fill(r,g,b);
+  //section 3
+  x += random(-speed,speed);
+  y += random(-speed,speed);
+  ellipse(x,y,50,50);
+}
+</script>
+</body>
+</html>
